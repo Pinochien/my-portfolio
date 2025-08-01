@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio - Manh Chien Pham </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header id="home">
+    <div class="container">
+      <div class="profile">
+        <!-- Home icon wrapped to go to top -->
+        <a href="#home" class="home-icon" aria-label="Home">
+          <!-- simple svg home-like icon (or replace with provided one) -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="32" height="32">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12L12 3m0 0l9 9M4.5 10.5v9h5.25v-6h4.5v6H19.5v-9" />
+          </svg>
+        </a>
+        <div class="name-email">
+          <div class="name">Manh Chien Pham</div>
+          <div class="details">
+            <span class="email">ádlldsa@gmail.com</span>
+            <span class="phone">+84 99999999</span>
+          </div>
+        </div>
+      </div>
+      <nav class="topmenu">
+        <a href="#about" class="topmenu-link">About Me</a>
+        <a href="#skills" class="topmenu-link">Skills</a>
+        <a href="#projects" class="topmenu-link">Projects</a>
+        <a href="#recommendations" class="topmenu-link">Recommendations</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="about-inner container">
+      <div class="avatar">
+        <!-- placeholder image -->
+        <img src="https://antimatter.vn/wp-content/uploads/2022/12/hinh-anh-avatar-tiktok-dep-nam.jpg" alt="Profile" />
+      </div>
+      <div class="bio">
+        <h1>Hi, I'm Manh Chien Pham! <span class="wave">👋</span></h1>
+        <p>I am a full-stack developer with experience building responsive modern web applications. I enjoy creating clean UIs, writing maintainable JavaScript, and learning new technologies. This sample portfolio demonstrates skills in HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="cards">
+        <!-- example skill cards -->
+        <div class="skill-card">
+          <div class="logo">HTML</div>
+          <div class="years">4 years experience</div>
+        </div>
+        <div class="skill-card">
+          <div class="logo">JavaScript</div>
+          <div class="years">3 years experience</div>
+        </div>
+        <div class="skill-card">
+          <div class="logo">React</div>
+          <div class="years">2 years experience</div>
+        </div>
+        <div class="skill-card">
+          <div class="logo">Node.js</div>
+          <div class="years">2 years experience</div>
+        </div>
+        <div class="skill-card">
+          <div class="logo">CSS</div>
+          <div class="years">4 years experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>Phát triển một trang web bảo mật tích hợp chatbot cho khách hàng ô tô sử dụng HTML, CSS, JavaScript và công cụ trợ lý thông minh.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Sentiment Analyzer</h3>
+        <p>Xây dựng và triển khai bộ phân tích cảm xúc cho phần đánh giá sản phẩm của một nền tảng thương mại điện tử.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Fashion E-commerce</h3>
+        <p>Tạo trang web nhiều trang có phong cách cho ngành thời trang tích hợp giỏ hàng và thanh toán bằng Stripe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations" class="section recommendations">
+    <div class="container">
+      <h2 class="section-title">Recommendations</h2>
+
+      <div id="rec-list" class="rec-cards">
+        <!-- existing sample recommendations -->
+        <div class="rec-card">
+          <p class="quote">“PINO là người học nhanh và luôn thực hiện công việc với sự cẩn trọng. Anh ấy đưa ra những câu hỏi đúng và có tinh thần đồng đội tốt.”</p>
+        </div>
+        <div class="rec-card">
+          <p class="quote">“Làm việc với Pino là một trải nghiệm tuyệt vời. Anh ấy luôn đảm bảo mọi chi tiết đều đúng và chủ động hỗ trợ nhóm.”</p>
+        </div>
+        <div class="rec-card">
+          <p class="quote">“Pino có kiến thức sâu rộng và luôn sẵn sàng đóng góp giá trị. Sẽ là một tài sản cho bất kỳ tổ chức nào.”</p>
+        </div>
+      </div>
+
+      <!-- form to add new recommendation -->
+      <div class="add-rec">
+        <textarea id="new-recommendation-text" placeholder="Viết một lời giới thiệu mới..." rows="3"></textarea>
+        <button id="recommend_btn" onclick="addRecommendation()">Add Recommendation</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Manh Chien Pham. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
